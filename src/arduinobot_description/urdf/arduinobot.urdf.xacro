@@ -2,6 +2,10 @@
 
 <robot xmlns:xacro = 'https://www.ros.org/wiki/xacro' name = 'arduinobot'>
 
+    <xacro:property name = "Pi" value = "3.14159"/>
+    <xacro:property name = "effort" value = "30.0"/>
+    <xacro:property name = "velocity" value = "10.0"/>
+
     <link name = "world"/>
 
     <link name = "base_link">
@@ -29,23 +33,101 @@
         </visual>
     </link>
 
-    <joint name = "joint_1" type = "fixed">
+    <joint name = "joint_1" type = "revolute">
         <parent link = "world"/>
         <child link = "base_plate"/>
+        <axis xyz = "0 0 1"/>
+        <origin rpy = "0 0 0" xyz = "0 0 0.307"/>
+        <limit lower = "-${Pi/2}" upper = "${Pi/2}" effort = "${effort}" velocity = "${velocity}"/>
+    </joint>
+
+    <link name = "forward_drive_arm">
+        <visual>
+            <origin rpy = "0 -${Pi/2} ${Pi/2}" xyz = "0.19 0.06 -0.08"/>
+            <geometry>
+                <mesh filename = "file:///home/faraz/arduinobot_ws/src/arduinobot_description/meshes/forward_drive_arm.STL" scale = "0.01 0.01 0.01"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name = "joint_2" type = "revolute">
+        <parent link = "base_plate"></parent>
+        <child link = "forward_drive_arm"/>
+        <axis xyz = "1 0 0"/>
+        <origin rpy = "0 0 0" xyz = "-.02 0 0.35"></origin>
+        <limit lower = "-${Pi/2}" upper = "${Pi/2}" effort = "${effort}" velocity = "${velocity}"/>
+    </joint>
+
+
+    <link name = "horizontal_arm">
+        <visual>
+            <origin rpy = "${Pi/2} 0 ${Pi/2}" xyz = "-0.03 -0.4 -0.06"/>
+            <geometry>
+                <mesh filename = "file:///home/faraz/arduinobot_ws/src/arduinobot_description/meshes/horizontal_arm.STL" scale = "0.01 0.01 0.01"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name = "joint_3" type = "revolute">
+        <parent link = "forward_drive_arm"/>
+        <child link = "horizontal_arm"/>
+        <axis xyz = "1 0 0"/>
+        <origin rpy = "0 0 0" xyz = "0 0 0.8"/>
+        <limit lower = "-${Pi/2}" upper = "${Pi/2}" effort = "${effort}" velocity = "${velocity}"/>
+    </joint>
+
+    <link name = "claw_support">
+        <visual>
+            <origin rpy = "0 0 ${Pi/2}" xyz = "-0 -0.05 -0.15"/>
+            <geometry>
+                <mesh filename = "file:///home/faraz/arduinobot_ws/src/arduinobot_description/meshes/claw_support.STL" scale = "0.01 0.01 0.01"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name = "horizontal_arm_to_claw_support" type = "fixed">
+        <parent link = "horizontal_arm"/>
+        <child link = "claw_support"/>
+        <origin xyz = "0 0.82 0" rpy = "0 0 0"/>
     </joint>
 
 
 
+    <link name = "gripper_right">
+        <visual>
+            <origin rpy = "0 0 -${Pi/2}" xyz = "-0.1 0.5 -0.1"/>   
+            <geometry>
+                <mesh filename = "file:///home/faraz/arduinobot_ws/src/arduinobot_description/meshes/right_finger.STL" scale = "0.01 0.01 0.01"/>
+            </geometry>
+        </visual>
+    </link>
 
 
+    <link name = "gripper_left">
+        <visual>
+            <origin rpy = "0 0 -${Pi/2}" xyz = "-0.04 0.5 -0.1"/>
+            <geometry>
+                <mesh filename = "file:///home/faraz/arduinobot_ws/src/arduinobot_description/meshes/left_finger.STL" scale = "0.01 0.01 0.01"/>
+            </geometry>
+        </visual>
+    </link>
 
+    <joint name = "joint_4" type = "revolute">
+        <parent link = "claw_support"/>
+        <child link = "gripper_right"/>
+        <axis xyz = "0 0 1"/>
+        <origin rpy = "0 0 0" xyz = "-0.04 0.13 -0.1"/>
+        <limit lower = "-${Pi/2}" upper = "${Pi/2}" effort = "${effort}" velocity = "${velocity}"/>
+    </joint>
 
-
-
-
-
-
-
+    <joint name = "joint_5" type = "revolute">
+        <parent link = "claw_support"/>
+        <child link = "gripper_left"/>
+        <axis xyz = "0 0 1"/>
+        <origin rpy = "0 0 0" xyz = "-0.22 0.13 -0.1"/>
+        <mimic joint = "joint_4" multiplier = "-1"/>
+        <limit lower = "0.0" upper = "${Pi/2}" effort = "${effort}" velocity = "${velocity}"/>
+    </joint>
 
 
 
