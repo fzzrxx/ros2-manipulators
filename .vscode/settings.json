@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/faraz/arduinobot_ws/build/arduinobot_py_examples",
+        "/home/faraz/arduinobot_ws/install/arduinobot_py_examples/lib/python3.12/site-packages",
+        "/home/faraz/bumperbot_ws/install/bumperbot_py_examples/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/faraz/arduinobot_ws/build/arduinobot_py_examples",
+        "/home/faraz/arduinobot_ws/install/arduinobot_py_examples/lib/python3.12/site-packages",
+        "/home/faraz/bumperbot_ws/install/bumperbot_py_examples/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}
