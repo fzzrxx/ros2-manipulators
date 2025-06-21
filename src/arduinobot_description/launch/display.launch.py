@@ -5,11 +5,16 @@ from launch_ros.parameter_descriptions import ParameterValue
 from launch.substitutions import Command, LaunchConfiguration
 from ament_index_python.packages import get_package_share_directory
 import os
+from pathlib import Path
 
 def generate_launch_description():
+
+    arduinobot_description_dir = get_package_share_directory("arduinobot_description")
+
+
     model_arg = DeclareLaunchArgument(
         name = "model2",
-        default_value=os.path.join(get_package_share_directory("arduinobot_description"),"urdf",
+        default_value=os.path.join(arduinobot_description_dir,"urdf",
                                    "arduinobot.urdf.xacro"),
                                    description="Path to the URDF file"
                                    #I genuinely hate python launch files ffs

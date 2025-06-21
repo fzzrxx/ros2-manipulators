@@ -1,1 +1,0 @@
-/home/faraz/arduinobot_ws/src/arduinobot_py_examples/setup.py
