@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'simple_parameter = arduinobot_py_examples.simple_parameter:main',
+            'simple_publisher = arduinobot_py_examples.simple_publisher:main'
         ],
     },
 )

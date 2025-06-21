@@ -131,4 +131,21 @@
 
 
 
+
+    <link name = "rgb_camera">
+        <visual>
+            <origin rpy="-1.57 0 -1.57" xyz="-0.1 0.125 0.15"/>
+            <geometry>
+                <mesh filename = "file:///home/faraz/arduinobot_ws/src/arduinobot_description/meshes/pi_camera.STL" scale = "0.01 0.01 0.01"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name = "rgb_camera_joint" type = "fixed">
+        <parent link = "base_link"/>
+        <child link = "rgb_camera"/>
+        <origin xyz = "0 0 0" rpy = "0 0 0"/>
+    </joint>
+
+
 </robot>
