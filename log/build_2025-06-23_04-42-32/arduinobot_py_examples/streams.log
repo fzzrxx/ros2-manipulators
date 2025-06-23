@@ -1,0 +1,27 @@
+[0.761s] Invoking command in '/home/faraz/arduinobot_ws/src/arduinobot_py_examples': AMENT_PREFIX_PATH=/home/faraz/arduinobot_ws/install/arduinobot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/faraz/arduinobot_ws/install/arduinobot_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/faraz/arduinobot_ws/install/arduinobot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/faraz/arduinobot_ws/build/arduinobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/faraz/arduinobot_ws/install/arduinobot_py_examples/lib/python3.12/site-packages:/home/faraz/arduinobot_ws/install/arduinobot_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arduinobot_py_examples build --build-base /home/faraz/arduinobot_ws/build/arduinobot_py_examples/build install --record /home/faraz/arduinobot_ws/build/arduinobot_py_examples/install.log --single-version-externally-managed install_data
+[1.008s] running egg_info
+[1.026s] writing ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/PKG-INFO
+[1.026s] writing dependency_links to ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/dependency_links.txt
+[1.026s] writing entry points to ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/entry_points.txt
+[1.026s] writing requirements to ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/requires.txt
+[1.026s] writing top-level names to ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/top_level.txt
+[1.065s] reading manifest file '../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/SOURCES.txt'
+[1.065s] writing manifest file '../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/SOURCES.txt'
+[1.065s] running build
+[1.065s] running build_py
+[1.066s] copying arduinobot_py_examples/simple_service_client.py -> /home/faraz/arduinobot_ws/build/arduinobot_py_examples/build/lib/arduinobot_py_examples
+[1.066s] running install
+[1.073s] running install_lib
+[1.093s] copying /home/faraz/arduinobot_ws/build/arduinobot_py_examples/build/lib/arduinobot_py_examples/simple_service_client.py -> /home/faraz/arduinobot_ws/install/arduinobot_py_examples/lib/python3.12/site-packages/arduinobot_py_examples
+[1.093s] byte-compiling /home/faraz/arduinobot_ws/install/arduinobot_py_examples/lib/python3.12/site-packages/arduinobot_py_examples/simple_service_client.py to simple_service_client.cpython-312.pyc
+[1.094s] running install_data
+[1.094s] running install_egg_info
+[1.115s] removing '/home/faraz/arduinobot_ws/install/arduinobot_py_examples/lib/python3.12/site-packages/arduinobot_py_examples-0.0.0-py3.12.egg-info' (and everything under it)
+[1.115s] Copying ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info to /home/faraz/arduinobot_ws/install/arduinobot_py_examples/lib/python3.12/site-packages/arduinobot_py_examples-0.0.0-py3.12.egg-info
+[1.116s] running install_scripts
+[1.240s] Installing simple_parameter script to /home/faraz/arduinobot_ws/install/arduinobot_py_examples/lib/arduinobot_py_examples
+[1.240s] Installing simple_publisher script to /home/faraz/arduinobot_ws/install/arduinobot_py_examples/lib/arduinobot_py_examples
+[1.240s] Installing simple_service_client script to /home/faraz/arduinobot_ws/install/arduinobot_py_examples/lib/arduinobot_py_examples
+[1.240s] Installing simple_service_server script to /home/faraz/arduinobot_ws/install/arduinobot_py_examples/lib/arduinobot_py_examples
+[1.240s] writing list of installed files to '/home/faraz/arduinobot_ws/build/arduinobot_py_examples/install.log'
+[1.271s] Invoked command in '/home/faraz/arduinobot_ws/src/arduinobot_py_examples' returned '0': AMENT_PREFIX_PATH=/home/faraz/arduinobot_ws/install/arduinobot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/faraz/arduinobot_ws/install/arduinobot_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/faraz/arduinobot_ws/install/arduinobot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/faraz/arduinobot_ws/build/arduinobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/faraz/arduinobot_ws/install/arduinobot_py_examples/lib/python3.12/site-packages:/home/faraz/arduinobot_ws/install/arduinobot_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arduinobot_py_examples build --build-base /home/faraz/arduinobot_ws/build/arduinobot_py_examples/build install --record /home/faraz/arduinobot_ws/build/arduinobot_py_examples/install.log --single-version-externally-managed install_data

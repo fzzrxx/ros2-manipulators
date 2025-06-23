@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/faraz/arduinobot_ws/src/arduinobot_moveit/configure_file": No such
+  file or directory.
+
+[0m
