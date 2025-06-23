@@ -13,6 +13,8 @@
 /home/faraz/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/triangular_link.STL
 /home/faraz/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/vertical_drive_arm.STL
 /home/faraz/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/urdf/arduinobot.urdf.xacro
+/home/faraz/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/urdf/arduinobot_gazebo.xacro
+/home/faraz/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/urdf/arduinobot_ros2_control.xacro
 /home/faraz/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/launch/display.launch.py
 /home/faraz/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/launch/gazebo.launch.py
 /home/faraz/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/rviz/display.rviz

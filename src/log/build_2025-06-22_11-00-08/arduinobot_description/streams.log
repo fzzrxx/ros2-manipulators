@@ -1,0 +1,69 @@
+[0.013s] Invoking command in '/home/faraz/arduinobot_ws/src/build/arduinobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/faraz/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/faraz/arduinobot_ws/src/arduinobot_description -DCMAKE_INSTALL_PREFIX=/home/faraz/arduinobot_ws/src/install/arduinobot_description
+[0.102s] -- The C compiler identification is GNU 13.3.0
+[0.177s] -- The CXX compiler identification is GNU 13.3.0
+[0.192s] -- Detecting C compiler ABI info
+[0.273s] -- Detecting C compiler ABI info - done
+[0.283s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.283s] -- Detecting C compile features
+[0.283s] -- Detecting C compile features - done
+[0.291s] -- Detecting CXX compiler ABI info
+[0.384s] -- Detecting CXX compiler ABI info - done
+[0.394s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.394s] -- Detecting CXX compile features
+[0.394s] -- Detecting CXX compile features - done
+[0.406s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.564s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.682s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.807s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.807s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.808s] -- Added test 'lint_cmake' to check CMake code style
+[0.809s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.811s] -- Added test 'xmllint' to check XML markup files
+[0.812s] -- Configuring done (0.8s)
+[0.815s] -- Generating done (0.0s)
+[0.817s] -- Build files have been written to: /home/faraz/arduinobot_ws/src/build/arduinobot_description
+[0.821s] Invoked command in '/home/faraz/arduinobot_ws/src/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/faraz/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/faraz/arduinobot_ws/src/arduinobot_description -DCMAKE_INSTALL_PREFIX=/home/faraz/arduinobot_ws/src/install/arduinobot_description
+[0.822s] Invoking command in '/home/faraz/arduinobot_ws/src/build/arduinobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/faraz/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/faraz/arduinobot_ws/src/build/arduinobot_description -- -j8 -l8
+[0.866s] Invoked command in '/home/faraz/arduinobot_ws/src/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/faraz/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/faraz/arduinobot_ws/src/build/arduinobot_description -- -j8 -l8
+[0.867s] Invoking command in '/home/faraz/arduinobot_ws/src/build/arduinobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/faraz/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/faraz/arduinobot_ws/src/build/arduinobot_description
+[0.875s] -- Install configuration: ""
+[0.875s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes
+[0.875s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/left_finger.STL
+[0.875s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/servo_plate.STL
+[0.876s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/link.STL
+[0.877s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/base_plate.STL
+[0.879s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/vertical_drive_arm.STL
+[0.882s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/claw_support.STL
+[0.883s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/round_plate.STL
+[0.883s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/forward_drive_arm.STL
+[0.884s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/right_finger.STL
+[0.884s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/triangular_link.STL
+[0.885s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/basement.STL
+[0.886s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/plate.STL
+[0.889s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/horizontal_arm.STL
+[0.890s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/meshes/pi_camera.STL
+[0.890s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/urdf
+[0.890s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/urdf/arduinobot_gazebo.xacro
+[0.890s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/urdf/arduinobot.urdf.xacro
+[0.890s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/urdf/arduinobot_ros2_control.xacro
+[0.890s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/launch
+[0.891s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/launch/display.launch.py
+[0.891s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/launch/gazebo.launch.py
+[0.891s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/rviz
+[0.891s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/rviz/display.rviz
+[0.891s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/ament_index/resource_index/package_run_dependencies/arduinobot_description
+[0.892s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/ament_index/resource_index/parent_prefix_path/arduinobot_description
+[0.892s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.sh
+[0.892s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.dsv
+[0.892s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/environment/path.sh
+[0.892s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/environment/path.dsv
+[0.892s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/local_setup.bash
+[0.893s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/local_setup.sh
+[0.893s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/local_setup.zsh
+[0.893s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/local_setup.dsv
+[0.893s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/package.dsv
+[0.893s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/ament_index/resource_index/packages/arduinobot_description
+[0.894s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/cmake/arduinobot_descriptionConfig.cmake
+[0.894s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/cmake/arduinobot_descriptionConfig-version.cmake
+[0.894s] -- Installing: /home/faraz/arduinobot_ws/src/install/arduinobot_description/share/arduinobot_description/package.xml
+[0.896s] Invoked command in '/home/faraz/arduinobot_ws/src/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/faraz/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/faraz/arduinobot_ws/src/build/arduinobot_description
